@@ -6,10 +6,9 @@
             <label for="inputAddress2" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="inputNombre" placeholder="Nombre completo" formControlName="nombre">
             <p class="notas" *ngIf="formContacto.get('nombre')?.errors?.['required']">Campo nombre es obligatorio.</p>
-            <p class="notas" *ngIf="formContacto.get('nombre')?.errors?.['minLength']">La contraseña debe tener al menos 8 caracteres.</p>
+            <p class="notas" *ngIf="formContacto.get('nombre')?.errors?.['minlength']">La contraseña debe tener al menos 8 caracteres.</p>
             <!-- <p>Nombre: {{ formContacto.get('nombre')?.value }} </p> -->
         </div>
-
 
         <!-- Campo apellido -->
         <div class="col-6">
@@ -29,9 +28,9 @@
         <!-- Campo contraseña -->
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputContraseña" formControlName="contraseña">
-            <p class="notas" *ngIf="formContacto.get('contraseña')?.errors?.['required']">Campo contraseña es obligatorio.</p>
-            <p class="notas" *ngIf="formContacto.get('contraseña')?.errors?.['minLength']">La contraseña debe tener al menos 8 caracteres.</p>
+            <input type="password" class="form-control" id="inputContrasenia" formControlName="contrasenia">
+            <p class="notas" *ngIf="formContacto.get('contrasenia')?.errors?.['required']">Campo contraseña es obligatorio.</p>
+            <p class="notas" *ngIf="formContacto.get('contrasenia')?.errors?.['minlength']">La contraseña debe tener al menos 8 caracteres.</p>
         </div>
 
         <!-- Campo domicilio -->

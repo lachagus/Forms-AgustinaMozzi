@@ -17,7 +17,7 @@ export class FormularioComponent implements OnInit {
     nombre: new FormControl('', [Validators.required]),
     apellido: new FormControl('', [Validators.required]),
     correo: new FormControl('', [Validators.required, Validators.email]),
-    contraseña: new FormControl('', [Validators.required, Validators.minLength(8)]),
+    contrasenia: new FormControl('', [Validators.required, Validators.minLength(8)]),
     domicilio: new FormControl(''),
     ciudad: new FormControl(''),
     provincia: new FormControl(''),
